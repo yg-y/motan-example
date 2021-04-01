@@ -1,0 +1,4 @@
+# Project exclude paths
+/motan-common/target/
+/motan-spring-client/target/
+/motan-spring-server/target/
