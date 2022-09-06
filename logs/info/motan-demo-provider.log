@@ -1,228 +1,121 @@
-2021-04-01 09:51:59.695 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e84876: startup date [Thu Apr 01 09:51:59 CST 2021]; root of context hierarchy
-2021-04-01 09:51:59.761 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_server.xml]
-2021-04-01 09:51:59.907 [main] INFO  info - AllSpiInitialization init.
-2021-04-01 09:51:59.914 [main] INFO  info - AllSpiInitialization init finish.
-2021-04-01 09:52:00.235 [main] INFO  info - get local address by hostname, address:null
-2021-04-01 09:52:00.236 [main] INFO  info - get local address by remote host. address:null
-2021-04-01 09:52:00.237 [main] INFO  info - get local address from network interface. address:/192.168.88.153
-2021-04-01 09:52:00.260 [main] INFO  info - ShutdownHook is initialized
-2021-04-01 09:52:00.261 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
-2021-04-01 09:52:00.263 [main] INFO  info - init compress codec
-2021-04-01 09:52:00.271 [main] INFO  info - add method sign:hell0700241e4740, methodinfo:MethodInfo [group=default_rpc, interfaceName=com.young.motan.service.FooService, methodName=hello, paramtersDesc=java.lang.String, version=1.0]
-2021-04-01 09:52:00.271 [main] INFO  info - RequestRouter addProvider: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc all_public_method_count=1
-2021-04-01 09:52:00.275 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
-2021-04-01 09:52:00.277 [main] INFO  info - NettyEndpointFactory create no_share_channel server: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:00.315 [main] INFO  info - NettyServer ServerChannel start Open: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:00.367 [main] INFO  info - NettyServer ServerChannel finish Open: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:00.367 [main] INFO  info - DefaultRpcExporter node init Success: [DefaultRpcExporter] url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:00.367 [main] INFO  info - DefaultRpcProtocol export Success: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:00.373 [main] INFO  info - [LocalRegistryService] Url (motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc) will register to Registry [local://127.0.0.1:0/default_rpc/com.weibo.api.motan.registry.RegistryService/1.0/service]
-2021-04-01 09:52:00.373 [main] INFO  info - LocalRegistryService register: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:18.297 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e84876: startup date [Thu Apr 01 09:52:18 CST 2021]; root of context hierarchy
-2021-04-01 09:52:18.366 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_client.xml]
-2021-04-01 09:52:18.592 [main] INFO  info - AllSpiInitialization init.
-2021-04-01 09:52:18.609 [main] INFO  info - AllSpiInitialization init finish.
-2021-04-01 09:52:18.825 [main] INFO  info - get local address by hostname, address:null
-2021-04-01 09:52:18.825 [main] INFO  info - get local address by remote host. address:null
-2021-04-01 09:52:18.826 [main] INFO  info - get local address from network interface. address:/192.168.88.153
-2021-04-01 09:52:18.903 [main] INFO  info - ShutdownHook is initialized
-2021-04-01 09:52:18.903 [main] INFO  info - add resource class com.weibo.api.motan.cluster.support.ClusterSupport$$Lambda$2/1769193365 to list
-2021-04-01 09:52:18.919 [main] INFO  info - ClusterSupport config change notify: registry=local://127.0.0.1:0/com.weibo.api.motan.registry.RegistryService service=motan://192.168.88.153:0/default_rpc/com.young.motan.service.FooService/1.0/referer urls=[motan://localhost:8002/default_rpc/com.young.motan.service.FooService/1.0/service]
-2021-04-01 09:52:18.920 [main] INFO  info - refresh weight. weight=
-2021-04-01 09:52:18.920 [main] INFO  info - ignore weightString:
-2021-04-01 09:52:18.928 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
-2021-04-01 09:52:18.928 [main] INFO  info - NettyEndpointFactory create client: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:19.006 [main] INFO  info - init compress codec
-2021-04-01 09:52:19.021 [main] INFO  info - init nettyclient. url:localhost-com.young.motan.service.FooService, use codec:DefaultRpcCodec
-2021-04-01 09:52:19.061 [main] INFO  info - NettyClient finish Open: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:19.067 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
-2021-04-01 09:52:19.067 [main] INFO  info - DefaultRpcReferer node init Success: [DefaultRpcReferer] url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:19.067 [main] INFO  info - DefaultRpcProtocol refer Success: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc, cost:145
-2021-04-01 09:52:19.077 [main] INFO  info - Use direct urls, refUrl=motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc, directUrls=[motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc]
-2021-04-01 09:52:19.078 [main] INFO  info - cluster init cost 171, refer size:1, cluster:motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:52:19.204 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52076 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:52:19.207 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52077 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:52:19.212 [New I/O client worker #1-2] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52077 event=UpstreamChannelStateEvent
-2021-04-01 09:52:19.212 [New I/O client worker #1-1] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52076 event=UpstreamChannelStateEvent
-2021-04-01 09:52:19.213 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52078 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:52:19.214 [AbstractPoolClient-initPool--1-thread-1] INFO  info - async initPool success!motan://localhost:8002/com.young.motan.service.FooService
-2021-04-01 09:52:19.214 [New I/O client worker #1-3] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52078 event=UpstreamChannelStateEvent
-2021-04-01 09:52:19.428 [main] ERROR error - RefererInvocationHandler invoke Error: uri=motan://192.168.88.153:0/com.young.motan.service.FooService requestId=1695801083519041537 interface=com.young.motan.service.FooService method=hello(java.lang.String)
-com.weibo.api.motan.exception.MotanServiceException: error_message: com.weibo.api.motan.rpc.DefaultResponseFuture request timeout: serverPort=localhost:8002 requestId=1695801083519041537 interface=com.young.motan.service.FooService method=hello(java.lang.String) cost=203, status: 503, error_code: 10003,r=null
-2021-04-01 09:52:19.665 [New I/O client worker #1-2] WARN  warn - NettyClient has response from server, but resonseFuture not exist,  requestId=1695801083519041537
-2021-04-01 09:52:30.264 [pool-1-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:52:30.264 [pool-1-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 26.26MB of 3641.00 MB (0.7%) used 
-2021-04-01 09:52:30.266 [pool-1-thread-1] INFO  serviceStatsLog - [motan-statisticCallback] identity: motan://192.168.88.153:8002/default_rpc/com.young.motan.service.FooService/1.0/service connectionCount: 3 taskCount: 0 queueCount: 0 maxThreadCount: 200 maxTaskCount: 200
-2021-04-01 09:52:49.067 [pool-4-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:52:49.068 [pool-4-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 22.26MB of 3641.00 MB (0.6%) used 
-2021-04-01 09:53:00.263 [pool-1-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:53:00.264 [pool-1-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 26.27MB of 3641.00 MB (0.7%) used 
-2021-04-01 09:53:00.264 [pool-1-thread-1] INFO  serviceStatsLog - [motan-statisticCallback] identity: motan://192.168.88.153:8002/default_rpc/com.young.motan.service.FooService/1.0/service connectionCount: 3 taskCount: 0 queueCount: 0 maxThreadCount: 200 maxTaskCount: 200
-2021-04-01 09:53:19.068 [pool-4-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:53:19.068 [pool-4-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 23.54MB of 3641.00 MB (0.6%) used 
-2021-04-01 09:53:30.266 [pool-1-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:53:30.266 [pool-1-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 26.27MB of 3641.00 MB (0.7%) used 
-2021-04-01 09:53:30.266 [pool-1-thread-1] INFO  serviceStatsLog - [motan-statisticCallback] identity: motan://192.168.88.153:8002/default_rpc/com.young.motan.service.FooService/1.0/service connectionCount: 3 taskCount: 0 queueCount: 0 maxThreadCount: 200 maxTaskCount: 200
-2021-04-01 09:53:49.067 [pool-4-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:53:49.068 [pool-4-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 23.54MB of 3641.00 MB (0.6%) used 
-2021-04-01 09:54:00.266 [pool-1-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:54:00.266 [pool-1-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 27.56MB of 3641.00 MB (0.8%) used 
-2021-04-01 09:54:00.267 [pool-1-thread-1] INFO  serviceStatsLog - [motan-statisticCallback] identity: motan://192.168.88.153:8002/default_rpc/com.young.motan.service.FooService/1.0/service connectionCount: 3 taskCount: 0 queueCount: 0 maxThreadCount: 200 maxTaskCount: 200
-2021-04-01 09:54:19.070 [pool-4-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:54:19.070 [pool-4-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 23.54MB of 3641.00 MB (0.6%) used 
-2021-04-01 09:54:21.165 [New I/O server worker #1-1] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52076 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:21.166 [New I/O server worker #1-2] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52077 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:21.166 [New I/O server worker #1-3] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52078 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:22.975 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e84876: startup date [Thu Apr 01 09:54:22 CST 2021]; root of context hierarchy
-2021-04-01 09:54:23.034 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_client.xml]
-2021-04-01 09:54:23.140 [main] INFO  info - AllSpiInitialization init.
-2021-04-01 09:54:23.143 [main] INFO  info - AllSpiInitialization init finish.
-2021-04-01 09:54:23.219 [main] INFO  info - get local address by hostname, address:null
-2021-04-01 09:54:23.219 [main] INFO  info - get local address by remote host. address:null
-2021-04-01 09:54:23.220 [main] INFO  info - get local address from network interface. address:/192.168.88.153
-2021-04-01 09:54:23.256 [main] INFO  info - ShutdownHook is initialized
-2021-04-01 09:54:23.257 [main] INFO  info - add resource class com.weibo.api.motan.cluster.support.ClusterSupport$$Lambda$2/1769193365 to list
-2021-04-01 09:54:23.266 [main] INFO  info - ClusterSupport config change notify: registry=local://127.0.0.1:0/com.weibo.api.motan.registry.RegistryService service=motan://192.168.88.153:0/default_rpc/com.young.motan.service.FooService/1.0/referer urls=[motan://localhost:8002/default_rpc/com.young.motan.service.FooService/1.0/service]
-2021-04-01 09:54:23.267 [main] INFO  info - refresh weight. weight=
-2021-04-01 09:54:23.267 [main] INFO  info - ignore weightString:
-2021-04-01 09:54:23.272 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
-2021-04-01 09:54:23.272 [main] INFO  info - NettyEndpointFactory create client: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:23.305 [main] INFO  info - init compress codec
-2021-04-01 09:54:23.318 [main] INFO  info - init nettyclient. url:localhost-com.young.motan.service.FooService, use codec:DefaultRpcCodec
-2021-04-01 09:54:23.337 [main] INFO  info - NettyClient finish Open: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:23.343 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
-2021-04-01 09:54:23.343 [main] INFO  info - DefaultRpcReferer node init Success: [DefaultRpcReferer] url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:23.343 [main] INFO  info - DefaultRpcProtocol refer Success: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc, cost:75
-2021-04-01 09:54:23.362 [main] INFO  info - Use direct urls, refUrl=motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc, directUrls=[motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc]
-2021-04-01 09:54:23.362 [main] INFO  info - cluster init cost 103, refer size:1, cluster:motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:23.398 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52147 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:23.398 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52148 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:23.410 [New I/O client worker #1-2] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52147 event=UpstreamChannelStateEvent
-2021-04-01 09:54:23.410 [New I/O client worker #1-1] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52148 event=UpstreamChannelStateEvent
-2021-04-01 09:54:23.411 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52149 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:23.411 [AbstractPoolClient-initPool--1-thread-1] INFO  info - async initPool success!motan://localhost:8002/com.young.motan.service.FooService
-2021-04-01 09:54:23.411 [New I/O client worker #1-3] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52149 event=UpstreamChannelStateEvent
-2021-04-01 09:54:30.262 [pool-1-thread-1] INFO  serviceStatsLog - [motan-totalAccessStatistic] app: motan module: motan total_count: 0 slow_count: 0 biz_excp: 0 other_excp: 0 avg_time: 0.00ms biz_time: 0.00ms avg_tps: 0
-2021-04-01 09:54:30.262 [pool-1-thread-1] INFO  serviceStatsLog - [motan-memoryStatistic] 27.56MB of 3641.00 MB (0.8%) used 
-2021-04-01 09:54:30.263 [pool-1-thread-1] INFO  serviceStatsLog - [motan-statisticCallback] identity: motan://192.168.88.153:8002/default_rpc/com.young.motan.service.FooService/1.0/service connectionCount: 3 taskCount: 0 queueCount: 0 maxThreadCount: 200 maxTaskCount: 200
-2021-04-01 09:54:45.069 [New I/O server worker #1-5] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52148 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:45.069 [New I/O server worker #1-6] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52149 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:45.069 [New I/O server worker #1-4] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52147 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:47.032 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e84876: startup date [Thu Apr 01 09:54:47 CST 2021]; root of context hierarchy
-2021-04-01 09:54:47.060 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_client.xml]
-2021-04-01 09:54:47.169 [main] INFO  info - AllSpiInitialization init.
-2021-04-01 09:54:47.176 [main] INFO  info - AllSpiInitialization init finish.
-2021-04-01 09:54:47.275 [main] INFO  info - get local address by hostname, address:null
-2021-04-01 09:54:47.275 [main] INFO  info - get local address by remote host. address:null
-2021-04-01 09:54:47.276 [main] INFO  info - get local address from network interface. address:/192.168.88.153
-2021-04-01 09:54:47.315 [main] INFO  info - ShutdownHook is initialized
-2021-04-01 09:54:47.315 [main] INFO  info - add resource class com.weibo.api.motan.cluster.support.ClusterSupport$$Lambda$2/1769193365 to list
-2021-04-01 09:54:47.323 [main] INFO  info - ClusterSupport config change notify: registry=local://127.0.0.1:0/com.weibo.api.motan.registry.RegistryService service=motan://192.168.88.153:0/default_rpc/com.young.motan.service.FooService/1.0/referer urls=[motan://localhost:8002/default_rpc/com.young.motan.service.FooService/1.0/service]
-2021-04-01 09:54:47.324 [main] INFO  info - refresh weight. weight=
-2021-04-01 09:54:47.324 [main] INFO  info - ignore weightString:
-2021-04-01 09:54:47.329 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
-2021-04-01 09:54:47.329 [main] INFO  info - NettyEndpointFactory create client: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:47.355 [main] INFO  info - init compress codec
-2021-04-01 09:54:47.361 [main] INFO  info - init nettyclient. url:localhost-com.young.motan.service.FooService, use codec:DefaultRpcCodec
-2021-04-01 09:54:47.377 [main] INFO  info - NettyClient finish Open: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:47.380 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
-2021-04-01 09:54:47.380 [main] INFO  info - DefaultRpcReferer node init Success: [DefaultRpcReferer] url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:47.380 [main] INFO  info - DefaultRpcProtocol refer Success: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc, cost:55
-2021-04-01 09:54:47.387 [main] INFO  info - Use direct urls, refUrl=motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc, directUrls=[motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc]
-2021-04-01 09:54:47.413 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52164 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:47.387 [main] INFO  info - cluster init cost 69, refer size:1, cluster:motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:47.414 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52165 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:47.432 [New I/O client worker #1-1] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52164 event=UpstreamChannelStateEvent
-2021-04-01 09:54:47.432 [New I/O client worker #1-2] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52165 event=UpstreamChannelStateEvent
-2021-04-01 09:54:47.433 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52166 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:47.433 [New I/O client worker #1-3] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52166 event=UpstreamChannelStateEvent
-2021-04-01 09:54:47.433 [AbstractPoolClient-initPool--1-thread-1] INFO  info - async initPool success!motan://localhost:8002/com.young.motan.service.FooService
-2021-04-01 09:54:51.077 [New I/O client worker #1-1] INFO  info - NettyChannelHandler channelDisconnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52164 event=UpstreamChannelStateEvent
-2021-04-01 09:54:51.078 [New I/O client worker #1-3] INFO  info - NettyChannelHandler channelDisconnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52166 event=UpstreamChannelStateEvent
-2021-04-01 09:54:51.079 [New I/O client worker #1-2] INFO  info - NettyChannelHandler channelDisconnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52165 event=UpstreamChannelStateEvent
-2021-04-01 09:54:52.910 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e84876: startup date [Thu Apr 01 09:54:52 CST 2021]; root of context hierarchy
-2021-04-01 09:54:52.939 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_server.xml]
-2021-04-01 09:54:53.023 [main] INFO  info - AllSpiInitialization init.
-2021-04-01 09:54:53.027 [main] INFO  info - AllSpiInitialization init finish.
-2021-04-01 09:54:53.096 [main] INFO  info - get local address by hostname, address:null
-2021-04-01 09:54:53.096 [main] INFO  info - get local address by remote host. address:null
-2021-04-01 09:54:53.097 [main] INFO  info - get local address from network interface. address:/192.168.88.153
-2021-04-01 09:54:53.113 [main] INFO  info - ShutdownHook is initialized
-2021-04-01 09:54:53.114 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
-2021-04-01 09:54:53.115 [main] INFO  info - init compress codec
-2021-04-01 09:54:53.127 [main] INFO  info - add method sign:hell0700241e4740, methodinfo:MethodInfo [group=default_rpc, interfaceName=com.young.motan.service.FooService, methodName=hello, paramtersDesc=java.lang.String, version=1.0]
-2021-04-01 09:54:53.128 [main] INFO  info - RequestRouter addProvider: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc all_public_method_count=1
-2021-04-01 09:54:53.132 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
-2021-04-01 09:54:53.134 [main] INFO  info - NettyEndpointFactory create no_share_channel server: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:53.176 [main] INFO  info - NettyServer ServerChannel start Open: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:53.224 [main] INFO  info - NettyServer ServerChannel finish Open: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:53.225 [main] INFO  info - DefaultRpcExporter node init Success: [DefaultRpcExporter] url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:53.225 [main] INFO  info - DefaultRpcProtocol export Success: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:53.228 [main] INFO  info - [LocalRegistryService] Url (motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc) will register to Registry [local://127.0.0.1:0/default_rpc/com.weibo.api.motan.registry.RegistryService/1.0/service]
-2021-04-01 09:54:53.229 [main] INFO  info - LocalRegistryService register: url=motan://192.168.88.153:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:57.692 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e84876: startup date [Thu Apr 01 09:54:57 CST 2021]; root of context hierarchy
-2021-04-01 09:54:57.737 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_client.xml]
-2021-04-01 09:54:57.825 [main] INFO  info - AllSpiInitialization init.
-2021-04-01 09:54:57.829 [main] INFO  info - AllSpiInitialization init finish.
-2021-04-01 09:54:57.906 [main] INFO  info - get local address by hostname, address:null
-2021-04-01 09:54:57.906 [main] INFO  info - get local address by remote host. address:null
-2021-04-01 09:54:57.908 [main] INFO  info - get local address from network interface. address:/192.168.88.153
-2021-04-01 09:54:57.957 [main] INFO  info - ShutdownHook is initialized
-2021-04-01 09:54:57.958 [main] INFO  info - add resource class com.weibo.api.motan.cluster.support.ClusterSupport$$Lambda$2/1769193365 to list
-2021-04-01 09:54:57.967 [main] INFO  info - ClusterSupport config change notify: registry=local://127.0.0.1:0/com.weibo.api.motan.registry.RegistryService service=motan://192.168.88.153:0/default_rpc/com.young.motan.service.FooService/1.0/referer urls=[motan://localhost:8002/default_rpc/com.young.motan.service.FooService/1.0/service]
-2021-04-01 09:54:57.968 [main] INFO  info - refresh weight. weight=
-2021-04-01 09:54:57.968 [main] INFO  info - ignore weightString:
-2021-04-01 09:54:57.972 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
-2021-04-01 09:54:57.973 [main] INFO  info - NettyEndpointFactory create client: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:57.995 [main] INFO  info - init compress codec
-2021-04-01 09:54:57.999 [main] INFO  info - init nettyclient. url:localhost-com.young.motan.service.FooService, use codec:DefaultRpcCodec
-2021-04-01 09:54:58.011 [main] INFO  info - NettyClient finish Open: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:58.014 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
-2021-04-01 09:54:58.014 [main] INFO  info - DefaultRpcReferer node init Success: [DefaultRpcReferer] url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:58.014 [main] INFO  info - DefaultRpcProtocol refer Success: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc, cost:45
-2021-04-01 09:54:58.020 [main] INFO  info - Use direct urls, refUrl=motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc, directUrls=[motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc]
-2021-04-01 09:54:58.020 [main] INFO  info - cluster init cost 60, refer size:1, cluster:motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:54:58.055 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52176 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:58.057 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52177 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:58.065 [New I/O client worker #1-1] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52176 event=UpstreamChannelStateEvent
-2021-04-01 09:54:58.065 [New I/O client worker #1-2] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52177 event=UpstreamChannelStateEvent
-2021-04-01 09:54:58.066 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52178 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:54:58.066 [AbstractPoolClient-initPool--1-thread-1] INFO  info - async initPool success!motan://localhost:8002/com.young.motan.service.FooService
-2021-04-01 09:54:58.066 [New I/O client worker #1-3] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52178 event=UpstreamChannelStateEvent
-2021-04-01 09:54:58.273 [main] ERROR error - RefererInvocationHandler invoke Error: uri=motan://192.168.88.153:0/com.young.motan.service.FooService requestId=1695801250179710977 interface=com.young.motan.service.FooService method=hello(java.lang.String)
-com.weibo.api.motan.exception.MotanServiceException: error_message: com.weibo.api.motan.rpc.DefaultResponseFuture request timeout: serverPort=localhost:8002 requestId=1695801250179710977 interface=com.young.motan.service.FooService method=hello(java.lang.String) cost=201, status: 503, error_code: 10003,r=null
-2021-04-01 09:55:01.033 [New I/O server worker #1-2] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52177 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:55:01.034 [New I/O server worker #1-3] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52178 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:55:01.034 [New I/O server worker #1-1] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52176 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:55:02.479 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e84876: startup date [Thu Apr 01 09:55:02 CST 2021]; root of context hierarchy
-2021-04-01 09:55:02.505 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_client.xml]
-2021-04-01 09:55:02.582 [main] INFO  info - AllSpiInitialization init.
-2021-04-01 09:55:02.586 [main] INFO  info - AllSpiInitialization init finish.
-2021-04-01 09:55:02.663 [main] INFO  info - get local address by hostname, address:null
-2021-04-01 09:55:02.663 [main] INFO  info - get local address by remote host. address:null
-2021-04-01 09:55:02.664 [main] INFO  info - get local address from network interface. address:/192.168.88.153
-2021-04-01 09:55:02.710 [main] INFO  info - ShutdownHook is initialized
-2021-04-01 09:55:02.710 [main] INFO  info - add resource class com.weibo.api.motan.cluster.support.ClusterSupport$$Lambda$2/1769193365 to list
-2021-04-01 09:55:02.721 [main] INFO  info - ClusterSupport config change notify: registry=local://127.0.0.1:0/com.weibo.api.motan.registry.RegistryService service=motan://192.168.88.153:0/default_rpc/com.young.motan.service.FooService/1.0/referer urls=[motan://localhost:8002/default_rpc/com.young.motan.service.FooService/1.0/service]
-2021-04-01 09:55:02.722 [main] INFO  info - refresh weight. weight=
-2021-04-01 09:55:02.722 [main] INFO  info - ignore weightString:
-2021-04-01 09:55:02.727 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
-2021-04-01 09:55:02.727 [main] INFO  info - NettyEndpointFactory create client: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:55:02.751 [main] INFO  info - init compress codec
-2021-04-01 09:55:02.756 [main] INFO  info - init nettyclient. url:localhost-com.young.motan.service.FooService, use codec:DefaultRpcCodec
-2021-04-01 09:55:02.767 [main] INFO  info - NettyClient finish Open: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:55:02.772 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
-2021-04-01 09:55:02.772 [main] INFO  info - DefaultRpcReferer node init Success: [DefaultRpcReferer] url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:55:02.772 [main] INFO  info - DefaultRpcProtocol refer Success: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc, cost:49
-2021-04-01 09:55:02.777 [main] INFO  info - Use direct urls, refUrl=motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc, directUrls=[motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc]
-2021-04-01 09:55:02.777 [main] INFO  info - cluster init cost 64, refer size:1, cluster:motan://192.168.88.153:0/com.young.motan.service.FooService?group=default_rpc
-2021-04-01 09:55:02.804 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52184 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:55:02.805 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52185 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:55:02.821 [New I/O client worker #1-1] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52185 event=UpstreamChannelStateEvent
-2021-04-01 09:55:02.821 [New I/O client worker #1-2] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52184 event=UpstreamChannelStateEvent
-2021-04-01 09:55:02.821 [New I/O server boss #1 ([id: 0x3e58a80e, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:52186 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:55:02.822 [AbstractPoolClient-initPool--1-thread-1] INFO  info - async initPool success!motan://localhost:8002/com.young.motan.service.FooService
-2021-04-01 09:55:02.822 [New I/O client worker #1-3] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:52186 event=UpstreamChannelStateEvent
-2021-04-01 09:55:05.716 [New I/O server worker #1-4] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52184 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:55:05.716 [New I/O server worker #1-6] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52186 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
-2021-04-01 09:55:05.716 [New I/O server worker #1-5] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:52185 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
+2022-09-06 15:37:06.547 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a955565: startup date [Tue Sep 06 15:37:06 CST 2022]; root of context hierarchy
+2022-09-06 15:37:06.592 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_server.xml]
+2022-09-06 15:37:06.751 [main] INFO  info - AllSpiInitialization init.
+2022-09-06 15:37:06.758 [main] INFO  info - AllSpiInitialization init finish.
+2022-09-06 15:37:06.883 [main] INFO  info - get local address by hostname, address:null
+2022-09-06 15:37:06.883 [main] INFO  info - get local address by remote host. address:null
+2022-09-06 15:37:06.889 [main] INFO  info - get local address from network interface. address:/192.168.11.43
+2022-09-06 15:37:06.916 [main] INFO  info - ShutdownHook is initialized
+2022-09-06 15:37:06.917 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
+2022-09-06 15:37:06.920 [main] INFO  info - init compress codec
+2022-09-06 15:37:06.933 [main] INFO  info - add method sign:hie9a007afdad9, methodinfo:MethodInfo [group=default_rpc, interfaceName=com.young.motan.service.FooService, methodName=hi, paramtersDesc=com.young.motan.ParamRequest, version=1.0]
+2022-09-06 15:37:06.933 [main] INFO  info - add method sign:hell0700241e4740, methodinfo:MethodInfo [group=default_rpc, interfaceName=com.young.motan.service.FooService, methodName=hello, paramtersDesc=java.lang.String, version=1.0]
+2022-09-06 15:37:06.933 [main] INFO  info - RequestRouter addProvider: url=motan://192.168.11.43:8002/com.young.motan.service.FooService?group=default_rpc all_public_method_count=2
+2022-09-06 15:37:06.946 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
+2022-09-06 15:37:06.948 [main] INFO  info - NettyEndpointFactory create no_share_channel server: url=motan://192.168.11.43:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:06.991 [main] INFO  info - NettyServer ServerChannel start Open: url=motan://192.168.11.43:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:07.048 [main] INFO  info - NettyServer ServerChannel finish Open: url=motan://192.168.11.43:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:07.048 [main] INFO  info - DefaultRpcExporter node init Success: [DefaultRpcExporter] url=motan://192.168.11.43:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:07.048 [main] INFO  info - DefaultRpcProtocol export Success: url=motan://192.168.11.43:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:07.054 [main] INFO  info - [LocalRegistryService] Url (motan://192.168.11.43:8002/com.young.motan.service.FooService?group=default_rpc) will register to Registry [local://127.0.0.1:0/default_rpc/com.weibo.api.motan.registry.RegistryService/1.0/service]
+2022-09-06 15:37:07.054 [main] INFO  info - LocalRegistryService register: url=motan://192.168.11.43:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:21.400 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59e84876: startup date [Tue Sep 06 15:37:21 CST 2022]; root of context hierarchy
+2022-09-06 15:37:21.434 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [motan_client.xml]
+2022-09-06 15:37:21.556 [main] INFO  info - AllSpiInitialization init.
+2022-09-06 15:37:21.561 [main] INFO  info - AllSpiInitialization init finish.
+2022-09-06 15:37:21.658 [main] INFO  info - get local address by hostname, address:null
+2022-09-06 15:37:21.658 [main] INFO  info - get local address by remote host. address:null
+2022-09-06 15:37:21.659 [main] INFO  info - get local address from network interface. address:/192.168.11.43
+2022-09-06 15:37:21.698 [main] INFO  info - ShutdownHook is initialized
+2022-09-06 15:37:21.698 [main] INFO  info - add resource class com.weibo.api.motan.cluster.support.ClusterSupport$$Lambda$2/1826699684 to list
+2022-09-06 15:37:21.709 [main] INFO  info - ClusterSupport config change notify: registry=local://127.0.0.1:0/com.weibo.api.motan.registry.RegistryService service=motan://192.168.11.43:0/default_rpc/com.young.motan.service.FooService/1.0/referer urls=[motan://localhost:8002/default_rpc/com.young.motan.service.FooService/1.0/service]
+2022-09-06 15:37:21.710 [main] INFO  info - refresh weight. weight=
+2022-09-06 15:37:21.710 [main] INFO  info - ignore weightString:
+2022-09-06 15:37:21.715 [main] INFO  info - add resource class com.weibo.api.motan.transport.support.HeartbeatClientEndpointManager$2 to list
+2022-09-06 15:37:21.715 [main] INFO  info - NettyEndpointFactory create client: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:21.742 [main] INFO  info - init compress codec
+2022-09-06 15:37:21.748 [main] INFO  info - init nettyclient. url:localhost-com.young.motan.service.FooService, use codec:DefaultRpcCodec
+2022-09-06 15:37:21.764 [main] INFO  info - NettyClient finish Open: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:21.766 [main] INFO  info - add resource class com.weibo.api.motan.util.StatsUtil$2 to list
+2022-09-06 15:37:21.767 [main] INFO  info - DefaultRpcReferer node init Success: [DefaultRpcReferer] url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:21.767 [main] INFO  info - DefaultRpcProtocol refer Success: url=motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc, cost:56
+2022-09-06 15:37:21.772 [main] INFO  info - Use direct urls, refUrl=motan://192.168.11.43:0/com.young.motan.service.FooService?group=default_rpc, directUrls=[motan://localhost:8002/com.young.motan.service.FooService?group=default_rpc]
+2022-09-06 15:37:21.772 [main] INFO  info - cluster init cost 71, refer size:1, cluster:motan://192.168.11.43:0/com.young.motan.service.FooService?group=default_rpc
+2022-09-06 15:37:21.812 [New I/O client worker #1-2] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:63299 event=UpstreamChannelStateEvent
+2022-09-06 15:37:21.812 [New I/O server boss #1 ([id: 0x0517566b, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:63298 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
+2022-09-06 15:37:21.812 [New I/O client worker #1-1] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:63298 event=UpstreamChannelStateEvent
+2022-09-06 15:37:21.813 [AbstractPoolClient-initPool--1-thread-1] INFO  info - async initPool success!motan://localhost:8002/com.young.motan.service.FooService
+2022-09-06 15:37:21.813 [New I/O client worker #1-3] INFO  info - NettyChannelHandler channelConnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:63300 event=UpstreamChannelStateEvent
+2022-09-06 15:37:21.814 [New I/O server boss #1 ([id: 0x0517566b, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:63299 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
+2022-09-06 15:37:21.815 [New I/O server boss #1 ([id: 0x0517566b, /0:0:0:0:0:0:0:0:8002])] INFO  info - NettyChannelHandler channelConnected: remote=/127.0.0.1:63300 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
+2022-09-06 15:37:21.857 [main] ERROR error - NettyChannelHandler exceptionCaught: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:63299 event=com.weibo.api.motan.exception.MotanFrameworkException: error_message: encode error: isResponse=false, status: 503, error_code: 20002,r=null
+com.weibo.api.motan.exception.MotanFrameworkException: error_message: encode error: isResponse=false, status: 503, error_code: 20002,r=null
+	at com.weibo.api.motan.protocol.rpc.DefaultRpcCodec.encode(DefaultRpcCodec.java:63)
+	at com.weibo.api.motan.transport.netty.NettyEncoder.encodeMessage(NettyEncoder.java:101)
+	at com.weibo.api.motan.transport.netty.NettyEncoder.encode(NettyEncoder.java:53)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:66)
+	at org.jboss.netty.channel.Channels.write(Channels.java:611)
+	at org.jboss.netty.channel.Channels.write(Channels.java:578)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:251)
+	at com.weibo.api.motan.transport.netty.NettyChannel.request(NettyChannel.java:66)
+	at com.weibo.api.motan.transport.netty.NettyClient.request(NettyClient.java:159)
+	at com.weibo.api.motan.transport.netty.NettyClient.request(NettyClient.java:106)
+	at com.weibo.api.motan.protocol.rpc.DefaultRpcReferer.doCall(DefaultRpcReferer.java:52)
+	at com.weibo.api.motan.rpc.AbstractReferer.call(AbstractReferer.java:64)
+	at com.weibo.api.motan.cluster.ha.FailoverHaStrategy.call(FailoverHaStrategy.java:72)
+	at com.weibo.api.motan.cluster.support.ClusterSpi.call(ClusterSpi.java:74)
+	at com.weibo.api.motan.proxy.AbstractRefererHandler.invokeRequest(AbstractRefererHandler.java:77)
+	at com.weibo.api.motan.proxy.RefererInvocationHandler.invoke(RefererInvocationHandler.java:75)
+	at com.sun.proxy.$Proxy8.hi(Unknown Source)
+	at com.young.motan.QuickStartClient.main(QuickStartClient.java:19)
+Caused by: java.lang.IllegalStateException: Serialized class com.young.motan.ParamRequest must implement java.io.Serializable
+	at com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:353)
+	at com.caucho.hessian.io.SerializerFactory.loadSerializer(SerializerFactory.java:334)
+	at com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:234)
+	at com.caucho.hessian.io.SerializerFactory.getObjectSerializer(SerializerFactory.java:206)
+	at com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:462)
+	at com.weibo.api.motan.serialize.Hessian2Serialization.serialize(Hessian2Serialization.java:42)
+	at com.weibo.api.motan.codec.AbstractCodec.serialize(AbstractCodec.java:44)
+	at com.weibo.api.motan.protocol.rpc.DefaultRpcCodec.encodeRequest(DefaultRpcCodec.java:172)
+	at com.weibo.api.motan.protocol.rpc.DefaultRpcCodec.encode(DefaultRpcCodec.java:55)
+	... 17 common frames omitted
+2022-09-06 15:37:21.859 [main] INFO  info - NettyChannelHandler channelDisconnected: remote=localhost/127.0.0.1:8002 local=/127.0.0.1:63299 event=UpstreamChannelStateEvent
+2022-09-06 15:37:21.859 [main] ERROR error - NettyClient request Error: url=motan://localhost:8002/com.young.motan.service.FooService requestId=1743205005291159553 interface=com.young.motan.service.FooService method=hi(com.young.motan.ParamRequest), error_message: NettyChannel send request to server Error: url=motan://localhost:8002/com.young.motan.service.FooService local=/127.0.0.1:63299 requestId=1743205005291159553 interface=com.young.motan.service.FooService method=hi(com.young.motan.ParamRequest), status: 503, error_code: 10001,r=null
+2022-09-06 15:37:21.859 [main] INFO  info - NettyChannelFactory_localhost_8002 client disconnect Success: motan://localhost:8002/com.young.motan.service.FooService
+2022-09-06 15:37:21.860 [main] ERROR error - RefererInvocationHandler invoke Error: uri=motan://192.168.11.43:0/com.young.motan.service.FooService requestId=1743205005291159553 interface=com.young.motan.service.FooService method=hi(com.young.motan.ParamRequest)
+com.weibo.api.motan.exception.MotanServiceException: error_message: NettyChannel send request to server Error: url=motan://localhost:8002/com.young.motan.service.FooService local=/127.0.0.1:63299 requestId=1743205005291159553 interface=com.young.motan.service.FooService method=hi(com.young.motan.ParamRequest), status: 503, error_code: 10001,r=null
+	at com.weibo.api.motan.transport.netty.NettyChannel.request(NettyChannel.java:100)
+	at com.weibo.api.motan.transport.netty.NettyClient.request(NettyClient.java:159)
+	at com.weibo.api.motan.transport.netty.NettyClient.request(NettyClient.java:106)
+	at com.weibo.api.motan.protocol.rpc.DefaultRpcReferer.doCall(DefaultRpcReferer.java:52)
+	at com.weibo.api.motan.rpc.AbstractReferer.call(AbstractReferer.java:64)
+	at com.weibo.api.motan.cluster.ha.FailoverHaStrategy.call(FailoverHaStrategy.java:72)
+	at com.weibo.api.motan.cluster.support.ClusterSpi.call(ClusterSpi.java:74)
+	at com.weibo.api.motan.proxy.AbstractRefererHandler.invokeRequest(AbstractRefererHandler.java:77)
+	at com.weibo.api.motan.proxy.RefererInvocationHandler.invoke(RefererInvocationHandler.java:75)
+	at com.sun.proxy.$Proxy8.hi(Unknown Source)
+	at com.young.motan.QuickStartClient.main(QuickStartClient.java:19)
+Caused by: com.weibo.api.motan.exception.MotanFrameworkException: error_message: encode error: isResponse=false, status: 503, error_code: 20002,r=null
+	at com.weibo.api.motan.protocol.rpc.DefaultRpcCodec.encode(DefaultRpcCodec.java:63)
+	at com.weibo.api.motan.transport.netty.NettyEncoder.encodeMessage(NettyEncoder.java:101)
+	at com.weibo.api.motan.transport.netty.NettyEncoder.encode(NettyEncoder.java:53)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:66)
+	at org.jboss.netty.channel.Channels.write(Channels.java:611)
+	at org.jboss.netty.channel.Channels.write(Channels.java:578)
+	at org.jboss.netty.channel.AbstractChannel.write(AbstractChannel.java:251)
+	at com.weibo.api.motan.transport.netty.NettyChannel.request(NettyChannel.java:66)
+	... 10 common frames omitted
+Caused by: java.lang.IllegalStateException: Serialized class com.young.motan.ParamRequest must implement java.io.Serializable
+	at com.caucho.hessian.io.SerializerFactory.getDefaultSerializer(SerializerFactory.java:353)
+	at com.caucho.hessian.io.SerializerFactory.loadSerializer(SerializerFactory.java:334)
+	at com.caucho.hessian.io.SerializerFactory.getSerializer(SerializerFactory.java:234)
+	at com.caucho.hessian.io.SerializerFactory.getObjectSerializer(SerializerFactory.java:206)
+	at com.caucho.hessian.io.Hessian2Output.writeObject(Hessian2Output.java:462)
+	at com.weibo.api.motan.serialize.Hessian2Serialization.serialize(Hessian2Serialization.java:42)
+	at com.weibo.api.motan.codec.AbstractCodec.serialize(AbstractCodec.java:44)
+	at com.weibo.api.motan.protocol.rpc.DefaultRpcCodec.encodeRequest(DefaultRpcCodec.java:172)
+	at com.weibo.api.motan.protocol.rpc.DefaultRpcCodec.encode(DefaultRpcCodec.java:55)
+	... 17 common frames omitted
+2022-09-06 15:37:21.862 [New I/O server worker #1-2] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:63299 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
+2022-09-06 15:37:34.014 [New I/O server worker #1-3] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:63300 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
+2022-09-06 15:37:34.014 [New I/O server worker #1-1] INFO  info - NettyChannelHandler channelDisconnected: remote=/127.0.0.1:63298 local=/127.0.0.1:8002 event=UpstreamChannelStateEvent
